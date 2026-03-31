@@ -18,4 +18,37 @@ class Templates {
         climate[] = {"arid", "arctic"}; //climate that the template is meant for
     };
     */
+
+    class E22RAF_Base
+    {
+        requiredAddons[] = {"Data_F_RAF"};       
+        basepath = QPATHTOFOLDER(Templates\E22RAF);
+        logo = "data_f_raf\Logos\arma3_raf_logo_ca.paa";
+        priority = 20;
+    };
+
+    class E22RAF_RAF_Arid : E22RAF_Base
+    {
+        side = "Inv";
+        flagTexture = "\a3\UI_F_Enoch\Data\CfgMarkers\Russia_CA.paa";
+        name = "E22 Russia Arid";
+        file = "E22RAF_AI_RAF_Arid";
+        climate[] = {"arid"};
+        shortName = "Russia";
+        lore = "";
+    };
+
+    class E22RAF_RAF_Temperate : E22RAF_RAF_Arid
+    {
+        name = "E22 Russia";
+        file = "E22RAF_AI_RAF_Temperate";
+        climate[] = {"temperate", "tropic"};
+    };  
+
+    class E22RAF_RAF_Arctic : E22RAF_RAF_Arid
+    {
+        name = "E22 Russia Arctic";
+        file = "E22RAF_AI_RAF_Arctic";
+        climate[] = {"arctic"};
+    };  
 };
