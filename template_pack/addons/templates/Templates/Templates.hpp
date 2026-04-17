@@ -51,4 +51,30 @@ class Templates {
         file = "E22RAF_AI_RAF_Arctic";
         climate[] = {"arctic"};
     };  
+
+    class E22JCA_Base
+    {
+        requiredAddons[] = {"Data_F_Levi", "Weapons_1_F_lxWS", "Data_F_JCA_IA", "Data_F_JCA_LS"};       
+        basepath = QPATHTOFOLDER(Templates\E22JCA);
+        logo = "data_f_levi\Logos\arma3_levi_icon_ca.paa";
+        priority = 20;
+    };
+
+    class E22JCA_JCOM_Arid : E22JCA_Base
+    {
+        side = "Occ";
+        flagTexture = "data_f_levi\Logos\arma3_levi_logoOver_ca.paa";
+        name = "E22 JointCom Arid";
+        file = "E22JCA_AI_JCOM_Arid";
+        climate[] = {"arid"};
+        shortName = "JCOM";
+        lore = "";
+    };
+
+    class E22JCA_JCOM_Temperate : E22JCA_JCOM_Arid
+    {
+        name = "E22 JointCom";
+        file = "E22JCA_AI_JCOM_Temperate";
+        climate[] = {"temperate","tropic"};
+    };
 };

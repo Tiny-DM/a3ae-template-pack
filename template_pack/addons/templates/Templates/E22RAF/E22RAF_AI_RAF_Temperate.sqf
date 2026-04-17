@@ -177,7 +177,7 @@ _loadoutData set ["backpacks", []];
 _loadoutData set ["longRangeRadios", ["E22_RAF_B_RadioBag_lesnoy"]];
 _loadoutData set ["helmets", []];
 
-_loadoutData set ["facewear", []];
+_loadoutData set ["facewear", [""]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
