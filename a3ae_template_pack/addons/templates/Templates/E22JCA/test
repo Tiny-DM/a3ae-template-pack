@@ -1,0 +1,78 @@
+12:16:53 2026-04-17 16:16:53:403 | Antistasi | Error | File: A3A_fnc_TV_verifyLoadoutsData | \x\template_pack\addons\templates\Templates\E22JCA\E22JCA_AI_JCOM_Arid.sqf Loadout validation failed for loadouts:
+police_Standard: 
+Bad case on classname: 30Rnd_556x45_Stanag_Red, expected: 30Rnd_556x45_Stanag_red
+Bad case on classname: 30Rnd_556x45_Stanag_Red, expected: 30Rnd_556x45_Stanag_red
+ | Called By: A3A_fnc_compatibilityLoadFaction
+
+
+
+
+ 12:16:58 2026-04-17 16:16:58:045 | Antistasi | Error | File: A3A_fnc_TV_verifyLoadoutsData | \x\template_pack\addons\templates\Templates\E22JCA\E22JCA_AI_JCOM_Temperate.sqf Loadout validation failed for loadouts:
+SF_Rifleman: 
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Tracer_Red_black_EMAG
+
+military_SquadLeader: 
+Invalid classname: E22_DigitalBinoculars_01_black_F
+
+SF_Medic: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+SF_AT: 
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Tracer_Red_black_EMAG
+
+SF_LAT: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+police_Standard: 
+12:16:58 >>> 
+Bad case on classname: 30Rnd_556x45_Stanag_Red, expected: 30Rnd_556x45_Stanag_red
+Bad case on classname: 30Rnd_556x45_Stanag_Red, expected: 30Rnd_556x45_Stanag_red
+
+militia_SquadLeader: 
+Invalid classname: E22_DigitalBinoculars_01_black_F
+
+police_SquadLeader: 
+Invalid classname: E22_DigitalBinoculars_01_black_F
+
+SF_SquadLeader: 
+Invalid classname: E22_DigitalBinoculars_01_black_F
+
+SF_AA: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+military_AA: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+military_Medic: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+military_Rifleman: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+military_LAT: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+SF_Enginee
+12:16:58 >>> r: 
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+Invalid classname: JCA_30Rnd_300BLK_Red_black_EMAG
+
+SF_ExplosivesExpert: 
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Red_black_EMAG
+Invalid classname: JCA_30Rnd_556x45_Tracer_Red_black_EMAG
+ | Called By: A3A_fnc_compatibilityLoadFaction
