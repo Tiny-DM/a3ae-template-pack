@@ -102,7 +102,7 @@ class Templates {
     class AFR_AI_IAF : AFR_Base
     {
         side = "Inv";
-        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\AFR\Textures\flag_iran.paa";
+        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\Textures\flag_iran.paa";
         name = "AFR Iran";
         file = "AFR_AI_IAF";
         climate[] = {};
@@ -124,7 +124,7 @@ class Templates {
     class AFR_AI_PLA : AFR_Base
     {
         side = "Inv";
-        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\AFR\Textures\flag_pla.paa";
+        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\Textures\flag_pla.paa";
         name = "AFR PLA";
         file = "AFR_AI_PLA";
         climate[] = {};
@@ -207,7 +207,7 @@ class Templates {
     class VME_PLA : VME_Base
     {
         side = "Inv";
-        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\AFR\Textures\flag_pla.paa";
+        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\Textures\flag_pla.paa";
         name = "VME PLA";
         file = "VME_AI_PLA";
     };
@@ -225,7 +225,6 @@ class Templates {
     {
         side = "Inv";
         flagTexture = "\rhsgref\addons\rhsgref_main\data\Flags\flag_cdf_co.paa";
-        logo = "\rhsafrf\addons\rhs_main\data\rhs_logo_ca.paa";
         name = "RHS GSB";
         file = "RHS_AI_GSB_Temperate";
         climate[] = {"Temperate"};
@@ -261,5 +260,89 @@ class Templates {
         file = "CUP_AI_VDV_Temperate";
         climate[] = {"temperate","tropical"};
         shortName = "VDV";
+    };
+
+    class CUP_PLA : CUP_VDV_Temperate
+    {
+        requiredAddons[] = {"CUP_AirVehicles_Core", "Flex_CUP_PLA_Faction", "Z20_LK"};
+        flagTexture = "\x\a3ae_template_pack\addons\templates\Markers\Textures\flag_pla.paa";
+        name = "CUP PLA";
+        file = "CUP_AI_PLA";
+        climate[] = {};
+        shortName = "PLA";
+    };
+
+    class OPTRE_Base
+    {   
+        requiredAddons[] = {"OPTRE_Core"};
+        logo = "A3\Data_F\Flags\Flag_blue_CO.paa";
+        basepath = QPATHTOFOLDER(Templates\Templates\OPTRE);
+        priority = 16;
+    };
+
+    class Optre_UNSC_Temperate : OPTRE_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\OPTRE);
+        side = "Occ";
+        logo = "x\a3ae_template_pack\addons\templates\Markers\Textures\flag_unsc_ca.paa";
+        flagTexture = "x\a3ae_template_pack\addons\templates\Markers\Textures\flag_unsc_ca.paa";
+        name = "OPTRE UNSC Temperate";
+        file = "Optre_AI_UNSC_Temperate";
+        climate[] = {"temperate"};
+        description = "United Nations Space Command";
+    };
+
+    class Optre_UNSC_Arid : Optre_UNSC_Temperate
+    {
+        name = "OPTRE UNSC Arid";
+        file = "Optre_AI_UNSC_Arid";
+        climate[] = {"arid"};
+        description = "United Nations Space Command - Hot Climates";
+    };
+
+    class Optre_INNIE_Temperate: OPTRE_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\OPTRE);
+        side = "Inv";
+        logo = "x\a3ae_template_pack\addons\templates\Markers\Textures\flag_insurrection_ca.paa";
+        flagTexture = "x\a3ae_template_pack\addons\templates\Markers\Textures\flag_insurrection_ca.paa";
+        name = "OPTRE Insurrection Temperate";
+        file = "Optre_AI_INNIE_Temperate";
+        climate[] = {"temperate"};
+        
+        description = "Insurrectionist Forces";
+    };
+
+    class Optre_INNIE_Arid: Optre_INNIE_Temperate
+    {
+
+        name = "OPTRE Insurrection Arid";
+        file = "Optre_AI_INNIE_Arid";
+        climate[] = {"arid"};
+        description = "Insurrectionist Forces - Deathworlders"
+    };
+
+    class Optre_VM_Temperate : OPTRE_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\OPTRE);
+        side = "Reb";
+        flagTexture = "A3\Data_F\Flags\Flag_red_CO.paa";
+        logo = "A3\Data_F\Flags\Flag_red_CO.paa";
+        name = "OPTRE VM";
+        file = "Optre_Reb_VM";
+        maps[] = {};
+        description = "Venezian Movement";
+    };
+
+    class Optre_Civ: OPTRE_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\OPTRE);
+        side = "Civ";
+        logo = "A3\Data_F\Flags\Flag_blue_CO.paa";
+        flagTexture = "A3\Data_F\Flags\Flag_blue_CO.paa";
+        name = "OPTRE Colonists";
+        file = "Optre_Civ_Colonial";
+        maps[] = {};
+        description = "Colonial Civilians";
     };
 };

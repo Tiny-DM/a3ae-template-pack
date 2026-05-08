@@ -9,6 +9,7 @@ class DOUBLES(ADDON,Nodes) {
     #include "Logistics\PEDNodes.hpp" //include the nodes from the different mods here
     #include "Logistics\VMENodes.hpp"
     #include "Logistics\FFAANodes.hpp"
+    #include "Logistics\OptreNodes.hpp"
 };
 
 //redefine the proper addon macro

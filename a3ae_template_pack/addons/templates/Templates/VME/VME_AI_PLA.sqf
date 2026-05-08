@@ -6,7 +6,7 @@
 ["spawnMarkerName", "PLA support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "PLA_Flag_PRC_F"] call _fnc_saveToTemplate;
-["flagTexture", "\x\a3ae_template_pack\addons\templates\Markers\AFR\Textures\flag_pla.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\x\a3ae_template_pack\addons\templates\Markers\Textures\flag_pla.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "a3ae_tp_flag_pla"] call _fnc_saveToTemplate;
 
 //////////////////////////
