@@ -53,7 +53,7 @@
 
 ["vehiclesPlanesCAS", ["vn_o_air_mig19_at"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["vn_o_air_mig19_cap", "sab_fl_yak3"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", [SPEX_CW_C47_Dakota]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["SPEX_CW_C47_Dakota"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
@@ -404,8 +404,6 @@ if (isClass (configFile >> "vnx_credits")) then {
     "vnx_c96"
     ];
     (_sfLoadoutData get "rifles") append [
-    ["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
-    ["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
     ["vnx_stg44", "", "", "", ["vnx_stg44_mag", "vnx_stg44_mag", "vnx_stg44_t_mag"], [], ""]
     ];
     (_sfLoadoutData get "slRifles") append [
@@ -434,17 +432,6 @@ if (isClass (configFile >> "vnx_credits")) then {
     ];
     (_militaryLoadoutData get "sniperRifles") append [
     "vnx_no4_sniper"
-    ];
-    _militiaLoadoutData set ["machineGuns",[
-    ["vnx_tul1", "", "", "", [], ["vn_type56_t_mag", "vn_type56_mag", "vn_type56_mag"], ""]
-    ]];
-    (_militaryLoadoutData get "machineGuns") append [
-    ["vnx_tul1", "", "", "", [], ["vnx_rpk_40_t_mag", "vn_type56_t_mag", "vn_type56_mag"], ""],
-    ["vnx_tul1", "", "", "", [], ["vnx_rpk_75_mag", "vn_type56_vnx_rpk_40_mag", "vn_type56_mag"], ""]
-    ];
-    (_sfLoadoutData get "machineGuns") append [
-    ["vnx_tul1", "", "", "", [], ["vnx_rpk_75_t_mag", "vnx_rpk_75_mag", "vnx_rpk_40_t_mag"], ""],
-    ["vnx_tul1", "", "", "", [], ["vnx_rpk_75_mag", "vnx_rpk_75_t_mag", "vnx_rpk_40_mag"], ""]
     ];
 };
 

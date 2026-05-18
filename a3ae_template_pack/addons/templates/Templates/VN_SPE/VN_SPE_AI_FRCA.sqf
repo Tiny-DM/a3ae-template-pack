@@ -144,7 +144,7 @@ _loadoutData set ["lightExplosives", ["vn_mine_m112_remote_mag"]];
 _loadoutData set ["heavyExplosives", ["vn_mine_satchel_remote_02_mag"]];
 
 _loadoutData set ["antiTankGrenades", []];
-_loadoutData set ["antiInfantryGrenades", ["SPE_US_Mk_2" "vn_f1_grenade_mag"]];
+_loadoutData set ["antiInfantryGrenades", ["SPE_US_Mk_2", "vn_f1_grenade_mag"]];
 _loadoutData set ["smokeGrenades", ["vn_m18_white_mag"]];
 _loadoutData set ["signalsmokeGrenades", ["vn_m18_yellow_mag", "vn_m18_red_mag", "vn_m18_purple_mag", "vn_m18_green_mag"]];
 
@@ -165,7 +165,7 @@ _loadoutData set ["medVests", ["V_SPE_US_Vest_Medic"]];
 _loadoutData set ["engVests", ["V_SPE_US_Vest_Carbine_jfak_eng"]];
 _loadoutData set ["mgVests", ["V_SPE_US_Vest_M1919_jfak"]];
 _loadoutData set ["slVests", []];
-_loadoutData set ["backpacks", ["B_SPE_US_Bandoleer_1", "B_SPE_US_Bandoleer_2", "B_SPE_US_Bandoleer_3", "B_SPE_US_Suspender_RocketBag", "B_SPE_US_Backpack_Mk2", "B_SPE_US_M36_Rope"]];
+_loadoutData set ["backpacks", ["B_SPE_US_Bandoleer_2", "B_SPE_US_Bandoleer_3", "B_SPE_US_Suspender_RocketBag", "B_SPE_US_Backpack_Mk2", "B_SPE_US_M36_Rope"]];
 _loadoutData set ["slBackpacks", ["B_SPEX_CW_Sack_P37_N61_no38_roll"]];
 _loadoutData set ["MGbackpacks", ["B_SPE_US_M36_Bandoleer_duplet"]];
 _loadoutData set ["medBackpacks", []];
@@ -236,11 +236,11 @@ _sfLoadoutData set ["carbines", [
 ["vn_l34a1", "", "", "", ["vn_l34a1_smg_mag", "vn_l34a1_smg_t_mag", "vn_f1_smg_mag", "vn_f1_smg_t_mag"], [], ""]
 ]];
 _sfLoadoutData set ["grenadeLaunchers", [
-["vn_m4956_gl", "", "", "", ["vn_m4956_10_mag", "vn_m4956_10_t_mag"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""],
+["vn_m4956_gl", "", "", "", ["vn_m4956_10_mag", "vn_m4956_10_t_mag"], ["vn_22mm_m9_heat_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""],
 ["vn_m2carbine_gl", "", "", "", ["vn_carbine_30_mag", "vn_carbine_30_t_mag", "vn_carbine_15_mag", "vn_carbine_15_t_mag", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
 ]];
 
-_militaryLoadoutData set ["SMGs", [
+_sfLoadoutData set ["SMGs", [
 ["SPEX_M1928A1_Thompson", "", "", "", ["SPE_20Rnd_Thompson_45ACP", "SPE_20Rnd_Thompson_45ACP_t", "SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP_t", "SPEX_50Rnd_Thompson_45ACP", "SPEX_50Rnd_Thompson_45ACP_t"], [], ""],
 ["vn_mat49", "", "", "", ["vn_mat49_mag", "vn_mat49_t_mag"], [], ""],
 ["vnx_m12_smg", "", "", "", ["vnx_m12_smg_32_t_mag", "vnx_m12_smg_32_mag"], [], ""],
@@ -268,7 +268,7 @@ _sfLoadoutData set ["sidearms", [
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
 _militaryLoadoutData set ["rifles", [
-["SPE_M1_Garand_Bayonet", "SPE_ACC_M1_Bayo", "", "", ["SPE_8Rnd_762x63". "SPE_8Rnd_762x63_t". "SPE_8Rnd_762x63_M1". "SPE_8Rnd_762x63_M2_AP". "vn_m1_garand_mag". "vn_m1_garand_t_mag"], [], ""],
+["SPE_M1_Garand_Bayonet", "SPE_ACC_M1_Bayo", "", "", ["SPE_8Rnd_762x63", "SPE_8Rnd_762x63_t", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M2_AP", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""],
 ["vn_m4956", "", "vn_b_m4956", "", ["vn_m4956_10_mag", "vn_m4956_10_t_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["slRifles", [
@@ -282,7 +282,7 @@ _militaryLoadoutData set ["carbines", [
 ["vn_m2carbine", "", "", "", ["vn_carbine_30_mag", "vn_carbine_15_mag", "vn_carbine_15_t_mag", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
-["vn_m4956_gl", "", "", "", ["vn_m4956_10_mag", "vn_m4956_10_t_mag"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
+["vn_m4956_gl", "", "", "", ["vn_m4956_10_mag", "vn_m4956_10_t_mag"], ["vn_22mm_m9_heat_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
 ["SPEX_M1928A1_Thompson", "", "", "", ["SPE_20Rnd_Thompson_45ACP", "SPE_20Rnd_Thompson_45ACP_t", "SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP_t", "SPEX_50Rnd_Thompson_45ACP", "SPEX_50Rnd_Thompson_45ACP_t"], [], ""],
@@ -344,9 +344,9 @@ _militiaLoadoutData set ["carbines", [
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
 ["SPE_M1_Carbine_M8", "SPE_ACC_GL_M8", "SPE_Carbine_pouch_od7", "", ["vn_carbine_15_mag", "vn_carbine_15_t_mag", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], ["SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_M2_AN_M14", "SPE_1Rnd_G_M2_ANM8", "SPE_1Rnd_G_M51A1", "SPE_1Rnd_G_M17A1"], ""],
-["SPE_M1_Garand_M7", "SPE_ACC_GL_M7", "", "", ["SPE_8Rnd_762x63". "SPE_8Rnd_762x63_t". "SPE_8Rnd_762x63_M1". "SPE_8Rnd_762x63_M2_AP". "vn_m1_garand_mag". "vn_m1_garand_t_mag"], ["SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_M2_AN_M14", "SPE_1Rnd_G_M2_ANM8", "SPE_1Rnd_G_M51A1", "SPE_1Rnd_G_M17A1"], ""],
+["SPE_M1_Garand_M7", "SPE_ACC_GL_M7", "", "", ["SPE_8Rnd_762x63", "SPE_8Rnd_762x63_t", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M2_AP", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], ["SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_M2_AN_M14", "SPE_1Rnd_G_M2_ANM8", "SPE_1Rnd_G_M51A1", "SPE_1Rnd_G_M17A1"], ""],
 ["vn_m1carbine_gl", "", "", "", ["vn_carbine_15_mag", "vn_carbine_15_t_mag", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""],
-["vn_m1_garand_gl", "", "", "", ["SPE_8Rnd_762x63". "SPE_8Rnd_762x63_t". "SPE_8Rnd_762x63_M1". "SPE_8Rnd_762x63_M2_AP". "vn_m1_garand_mag". "vn_m1_garand_t_mag"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
+["vn_m1_garand_gl", "", "", "", ["SPE_8Rnd_762x63", "SPE_8Rnd_762x63_t", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M2_AP", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["vnx_m38_smg", "", "", "", ["vnx_m38_smg_32_mag", "vnx_m38_smg_32_t_mag"], [], ""]
@@ -357,11 +357,11 @@ _militiaLoadoutData set ["machineGuns", [
 ["vnx_fm2429", "", "", "", ["vnx_fm2429_mag", "vnx_fm2429_t_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["marksmanRifles", [
-["vn_m1_garand", "", "", "vn_o_3x_m84", ["SPE_8Rnd_762x63". "SPE_8Rnd_762x63_t". "SPE_8Rnd_762x63_M1". "SPE_8Rnd_762x63_M2_AP". "vn_m1_garand_mag". "vn_m1_garand_t_mag"], [], ""],
+["vn_m1_garand", "", "", "vn_o_3x_m84", ["SPE_8Rnd_762x63", "SPE_8Rnd_762x63_t", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M2_AP", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""],
 ["vn_m1carbine", "", "", "vn_o_3x_m84", ["vn_carbine_15_mag", "vn_carbine_15_t_mag", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], [], ""]
 ]];
 _militiaLoadoutData set ["sniperRifles", [
-["vn_m1_garand", "", "", "vn_o_3x_m84", ["SPE_8Rnd_762x63". "SPE_8Rnd_762x63_t". "SPE_8Rnd_762x63_M1". "SPE_8Rnd_762x63_M2_AP". "vn_m1_garand_mag". "vn_m1_garand_t_mag"], [], ""]
+["vn_m1_garand", "", "", "vn_o_3x_m84", ["SPE_8Rnd_762x63", "SPE_8Rnd_762x63_t", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M2_AP", "vn_m1_garand_mag", "vn_m1_garand_t_mag"], [], ""]
 ]];
 
 //////////////////////////
