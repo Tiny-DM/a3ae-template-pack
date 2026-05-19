@@ -345,4 +345,33 @@ class Templates {
         maps[] = {};
         description = "Colonial Civilians";
     };
+
+    //Post US-Vietnam war
+    class VNX_Base {
+        requiredAddons[] = {"vnx_build_number"};
+        logo = "\vn\data_f_vietnam\logos\vn_sml_ca.paa";
+        flagTexture = "vn\objects_f_vietnam\flags\data\vn_flag_01_pavn_co.paa";
+        basepath = QPATHTOFOLDER(Templates\VN_SPE);
+        priority = 90;
+        equipFlags[] = {"lowTech","replaceCompass","replaceWatch"};
+        forceDLC[] = {"vn"};
+    };
+    //French Indochina war
+    class VN_SPE_Base : VNX_Base{
+        requiredAddons[] = {"vnx_build_number","WW2_SPEX_Assets_c_Characters_Americans_c", "sab_flyinglegends"};
+        forceDLC[] = {"spe"};
+    };
+
+    class VN_SPE_FCA : VN_SPE_Base {
+        side = "Inv";
+        name = "VN/SPE FCA";
+        file = "VN_SPE_AI_FRCA";
+        description = "French Colonial Army of Indochina";
+    }
+    class VN_SPE_NVA_Erla : VN_SPE_Base {
+        side = "Occ";
+        name = "VN/SPE Early NVA";
+        file = "VN_SPE_AI_NVA";
+        description = "Early NVA forces";
+    }
 };
