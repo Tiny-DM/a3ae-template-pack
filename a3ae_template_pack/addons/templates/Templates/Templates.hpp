@@ -356,4 +356,46 @@ class Templates {
         maps[] = {};
         lore = "Some of the colonists joined the Insurrectionists when the civil war came into full effect, but many either sheltered in place or tried to flee the combat zone. Getting the civilians on our side is key to winning the war in the long term.";
     };
+
+    //Post US-Vietnam war
+    class VNX_Base {
+        requiredAddons[] = {"vnx_build_number"};
+        logo = "\vn\data_f_vietnam\logos\vn_sml_ca.paa";
+        flagTexture = "vn\objects_f_vietnam\flags\data\vn_flag_01_pavn_co.paa";
+        basepath = QPATHTOFOLDER(Templates\VN_SPE);
+        priority = 90;
+        equipFlags[] = {"lowTech","replaceCompass","replaceWatch"};
+        forceDLC[] = {"vn"};
+    };
+
+    class VNX_PLA : VNX_Base {
+        side = "Inv";
+        name = "VNX PLA";
+        file = "VN_SPE_AI_PLA";
+        description = "People's Liberation army, circa 1979";
+    }
+    class VNX_PAVN_Late : VNX_Base {
+        side = "Occ";
+        name = "VNX PAVN Late";
+        file = "VN_SPE_AI_PAVN_Late";
+        description = "PAVN circa 1979";
+    }
+    //French Indochina war
+    class VN_SPE_Base : VNX_Base{
+        requiredAddons[] = {"vnx_build_number","WW2_SPEX_Assets_c_Characters_Americans_c", "sab_flyinglegends"};
+        forceDLC[] = {"spe"};
+    };
+
+    class VN_SPE_FCA : VN_SPE_Base {
+        side = "Inv";
+        name = "VN/SPE FCA";
+        file = "VN_SPE_AI_FRCA";
+        description = "French Colonial Army of Indochina";
+    }
+    class VN_SPE_NVA_Erla : VN_SPE_Base {
+        side = "Occ";
+        name = "VN/SPE Early NVA";
+        file = "VN_SPE_AI_NVA";
+        description = "Early NVA forces";
+    }
 };
