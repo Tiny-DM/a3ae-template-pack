@@ -94,7 +94,7 @@ This mod must be installed on both the clients and the server. Theoretically, yo
 
 ## Links
 
-- Antistasi Discord: discord.gg/antistasi
+- Antistasi Discord: https://discord.gg/antistasi
 - Antistasi - The Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125
 - Antistasi Dev Build: https://steamcommunity.com/sharedfiles/filedetails/?id=2729074499
 - License: https://www.bohemia.net/community/licenses/arma-public-license-nd
