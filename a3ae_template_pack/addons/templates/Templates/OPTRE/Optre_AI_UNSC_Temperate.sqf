@@ -27,7 +27,7 @@
 ["vehiclesFuelTrucks", ["OPTRE_m1087_stallion_unsc_refuel"]] call _fnc_saveToTemplate;		//this line determines fuel trucks -- Array, can contain multiple assets
 ["vehiclesMedical", ["OPTRE_m1087_stallion_unsc_medical", "OPTRE_M12_FAV_APC_MED"]] call _fnc_saveToTemplate;			//this line determines medical vehicles -- Array, can contain multiple assets
 ["vehiclesAPCs", ["OPTRE_M411_APC_UNSC"]] call _fnc_saveToTemplate; 				//this line determines APCs -- Example: ["vehiclesAPCs", ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"]] -- Array, can contain multiple assets
-["vehiclesTanks", ["OPTRE_M808B_UNSC", "OPTRE_M808BM_UNSC", "OPTRE_M808S",""]] call _fnc_saveToTemplate; 			//this line determines tanks -- Example: ["vehiclesTanks", ["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"]] -- Array, can contain multiple assets
+["vehiclesTanks", ["OPTRE_M808B_UNSC", "OPTRE_M808BM_UNSC", "OPTRE_M808S"]] call _fnc_saveToTemplate; 			//this line determines tanks -- Example: ["vehiclesTanks", ["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"]] -- Array, can contain multiple assets
 ["vehiclesAA", ["OPTRE_M808B2", "OPTRE_M808B2A1"]] call _fnc_saveToTemplate; 				//this line determines AA vehicles -- Example: ["vehiclesAA", ["B_APC_Tracked_01_AA_F"]] -- Array, can contain multiple assets
 ["vehiclesLightAPCs", ["OPTRE_M493_APC", "OPTRE_M493_AIE", "OPTRE_M493_AIE_RCWS", "OPTRE_M493_M37"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", [ "OPTRE_M412_IFV_UNSC","OPTRE_M494"]] call _fnc_saveToTemplate;				//this line determines IFVs

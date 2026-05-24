@@ -200,8 +200,10 @@ switch (_mode) do
             ["AFR_Insignia", "[AFR] - Arma Factions Reimagined"],
             ["Data_F_Levi", "E22 - Northstar"],
             ["Data_F_JCA_IA", "JCA - Infantry Arsenal"],
-            ["Data_F_JCA_LS", "JCA - Infantry Equipment"],
-            ["Data_F_RAF", "E22 - Russian Armed Forces 2.0"]
+            ["facewear_f_jca_ie", "JCA - Infantry Equipment"],
+            ["Data_F_RAF", "E22 - Russian Armed Forces 2.0"],
+            ["vnx_build_number", "SOG: Nickel Steel"],
+            ["sab_flyinglegends", "Flying Legends"]
         ];
 
         private _prettyAddons = _requiredAddons apply 
