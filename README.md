@@ -6,6 +6,8 @@ Many of the factions in this mod will be moved over to the main Antistasi mod in
 
 If you check back on the mod and the factions you’re using are no longer listed in the mod’s description, they are likely implemented into the main Antistasi mod and you can safely remove this this template pack mod.
 
+This mod must be installed on both the clients and the server. Theoretically, you can only load it once on the clients when you start the game and keep it as a server mod for subsequent save/loads, but I haven't tried it and it's not worth the effort.
+
 ## Factions Added
 
 - [AFR] - Arma Factions Replaced
