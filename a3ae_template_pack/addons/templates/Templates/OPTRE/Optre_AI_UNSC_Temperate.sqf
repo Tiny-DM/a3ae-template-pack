@@ -210,7 +210,7 @@ _loadoutData set ["items_unarmed_extras", []];
 
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_militaryloadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI","OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
+_militaryloadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
 _militaryloadoutData set ["slUniforms", ["OPTRE_UNSC_Army_Uniform_R_OLI_SlimLeg","OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
 
 _militaryloadoutData set ["Vests", ["OPTRE_UNSC_M52A_Armor_Rifleman_OLI","OPTRE_UNSC_M52A_Armor_Marksman_OLI"]];
@@ -464,7 +464,7 @@ _policeLoadoutData set ["sidearms", [["OPTRE_M6G", "", "", "", ["OPTRE_8Rnd_127x
 //////////////////////////
 //The following lines are determining the loadout of the vehicle crew
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
 _crewLoadoutData set ["vests", ["OPTRE_UNSC_M52A_Armor3_OLI"]];				//this line determines vests for vehicle crew loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _crewLoadoutData set ["Crewhelmets", [
 "OPTRE_CH255_Security_Advanced_Type_2_Helmet",
@@ -473,7 +473,7 @@ _crewLoadoutData set ["Crewhelmets", [
 
 //The following lines are determining the loadout of the pilots
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["OPTRE_UNSC_Airforce_Uniform"]];			//this line determines uniforms for pilot loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_pilotLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];			//this line determines uniforms for pilot loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
 _pilotLoadoutData set ["Pvests", ["OPTRE_UNSC_M52A_Armor_Pilot_AF"]];			//this line determines vests for pilot loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _pilotLoadoutData set ["Phelmets", [
 "OPTRE_UNSC_CH252_Helmet2_Vacuum_SNO", 

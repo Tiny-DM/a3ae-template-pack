@@ -300,6 +300,15 @@ class CfgVehicles
         hiddenSelectionsTextures[] ={"optre_vehicles\catfish\data\cheese_boat_co.paa"};
     }
 
+    class OPTRE_M875_SPH;
+    class OPTRE_M875_SPH_Arid : OPTRE_M875_SPH
+    {
+        textureList[] = {};
+        hiddenSelectionsTextures[] ={"optre_vehicles_tracked\scorpion\data\texture\camo\scorp_base_desert_co.paa","optre_vehicles_tracked\scorpion\data\texture\camo\scorp_art_desert_co.paa","optre_vehicles_tracked\scorpion\data\texture\camo\scorp_net_desert_ca.paa","optre_vehicles_tracked\scorpion\data\texture\camo\scorp_art_camo_desert_co.paa","optre_vehicles_tracked\scorpion\data\texture\scorp_decals_ca.paa","optre_vehicles_tracked\scorpion\data\texture\camo\scorp_mg_desert_co.paa","optre_vehicles_tracked\scorpion\data\texture\det_1_lopo_co.paa","optre_vehicles_tracked\scorpion\data\texture\camo\det_3_desert_co.paa"};
+    }
+
+    
+
     //INNIE ARID TEXTURE CHANGES
 
     //class x;
