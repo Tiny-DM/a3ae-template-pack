@@ -31,7 +31,7 @@
 ["vehiclesAA", ["OPTRE_M808B2_Arid", "OPTRE_M808B2A1_Arid"]] call _fnc_saveToTemplate; 				//this line determines AA vehicles -- Example: ["vehiclesAA", ["B_APC_Tracked_01_AA_F"]] -- Array, can contain multiple assets
 ["vehiclesLightAPCs", ["OPTRE_M493_APC_Arid", "OPTRE_M493_AIE_Arid", "OPTRE_M493_AIE_RCWS_Arid", "OPTRE_M493_M37_Arid"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", [ "OPTRE_M412_IFV_UNSC_Arid","OPTRE_M494_Arid"]] call _fnc_saveToTemplate;				//this line determines IFVs
-["vehiclesLightTanks", ["OPTRE_M700_Viper_UNSC","OPTRE_M413_MGS_UNSC_Arid"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks", ["OPTRE_M700_Viper_UNSC_Tan","OPTRE_M413_MGS_UNSC_Arid"]] call _fnc_saveToTemplate;
 ["vehiclesHeavyTanks", ["OPTRE_M808L", "OPTRE_M850_UNSC_Arid"]] call _fnc_saveToTemplate;
 
 
@@ -56,8 +56,8 @@
 "OPTRE_UNSC_UH_144_Falcon_DAP_Arid", 
 "OPTRE_UNSC_hornet_CAP_Arid"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["B_MBT_01_arty_F"]] call _fnc_saveToTemplate;
-["magazines", createHashMapFromArray [["B_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]]]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["OPTRE_M875_SPH_Arid"]] call _fnc_saveToTemplate;
+["magazines", createHashMapFromArray [["OPTRE_M875_SPH_Arid",["32Rnd_155mm_Mo_shells"]]]] call _fnc_saveToTemplate;
 ["uavsAttack", ["OPTRE_Wombat", "OPTRE_Wombat_B"]] call _fnc_saveToTemplate; 				//this line determines attack UAVs -- Example: ["uavsAttack", ["B_UAV_02_CAS_F"]] -- Array, can contain multiple assets
 ["uavsPortable", ["OPTRE_OQ40_Minibee_UNSC","OPTRE_OQ_38_Wren_Drone_UNSC"]] call _fnc_saveToTemplate; 				//this line determines portable UAVs -- Example: ["uavsPortable", ["B_UAV_01_F"]] -- Array, can contain multiple assets
 
@@ -461,8 +461,8 @@ _policeLoadoutData set ["sidearms", [["OPTRE_M6G", "", "", "", ["OPTRE_8Rnd_127x
 //////////////////////////
 //The following lines are determining the loadout of the vehicle crew
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
-_crewLoadoutData set ["vests", ["OPTRE_UNSC_M52A_Armor3_OLI"]];				//this line determines vests for vehicle crew loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
+_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_DES_SlimLeg"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_crewLoadoutData set ["vests", ["OPTRE_UNSC_Army_Uniform_DES_SlimLeg"]];				//this line determines vests for vehicle crew loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _crewLoadoutData set ["Crewhelmets", [
 "OPTRE_CH255_Security_Advanced_Type_2_Helmet",
 "OPTRE_CH255_Security_Basic_Type_3_Helmet",
