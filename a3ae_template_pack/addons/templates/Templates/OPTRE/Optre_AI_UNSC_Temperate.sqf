@@ -27,7 +27,7 @@
 ["vehiclesFuelTrucks", ["OPTRE_m1087_stallion_unsc_refuel"]] call _fnc_saveToTemplate;		//this line determines fuel trucks -- Array, can contain multiple assets
 ["vehiclesMedical", ["OPTRE_m1087_stallion_unsc_medical", "OPTRE_M12_FAV_APC_MED"]] call _fnc_saveToTemplate;			//this line determines medical vehicles -- Array, can contain multiple assets
 ["vehiclesAPCs", ["OPTRE_M411_APC_UNSC"]] call _fnc_saveToTemplate; 				//this line determines APCs -- Example: ["vehiclesAPCs", ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"]] -- Array, can contain multiple assets
-["vehiclesTanks", ["OPTRE_M808B_UNSC", "OPTRE_M808BM_UNSC", "OPTRE_M808S",""]] call _fnc_saveToTemplate; 			//this line determines tanks -- Example: ["vehiclesTanks", ["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"]] -- Array, can contain multiple assets
+["vehiclesTanks", ["OPTRE_M808B_UNSC", "OPTRE_M808BM_UNSC", "OPTRE_M808S"]] call _fnc_saveToTemplate; 			//this line determines tanks -- Example: ["vehiclesTanks", ["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"]] -- Array, can contain multiple assets
 ["vehiclesAA", ["OPTRE_M808B2", "OPTRE_M808B2A1"]] call _fnc_saveToTemplate; 				//this line determines AA vehicles -- Example: ["vehiclesAA", ["B_APC_Tracked_01_AA_F"]] -- Array, can contain multiple assets
 ["vehiclesLightAPCs", ["OPTRE_M493_APC", "OPTRE_M493_AIE", "OPTRE_M493_AIE_RCWS", "OPTRE_M493_M37"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", [ "OPTRE_M412_IFV_UNSC","OPTRE_M494"]] call _fnc_saveToTemplate;				//this line determines IFVs
@@ -210,7 +210,7 @@ _loadoutData set ["items_unarmed_extras", []];
 
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_militaryloadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI","OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
+_militaryloadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
 _militaryloadoutData set ["slUniforms", ["OPTRE_UNSC_Army_Uniform_R_OLI_SlimLeg","OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];
 
 _militaryloadoutData set ["Vests", ["OPTRE_UNSC_M52A_Armor_Rifleman_OLI","OPTRE_UNSC_M52A_Armor_Marksman_OLI"]];
@@ -464,7 +464,7 @@ _policeLoadoutData set ["sidearms", [["OPTRE_M6G", "", "", "", ["OPTRE_8Rnd_127x
 //////////////////////////
 //The following lines are determining the loadout of the vehicle crew
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_crewLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];			//this line determines uniforms for vehicle crew loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
 _crewLoadoutData set ["vests", ["OPTRE_UNSC_M52A_Armor3_OLI"]];				//this line determines vests for vehicle crew loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _crewLoadoutData set ["Crewhelmets", [
 "OPTRE_CH255_Security_Advanced_Type_2_Helmet",
@@ -473,7 +473,7 @@ _crewLoadoutData set ["Crewhelmets", [
 
 //The following lines are determining the loadout of the pilots
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["OPTRE_UNSC_Airforce_Uniform"]];			//this line determines uniforms for pilot loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_pilotLoadoutData set ["uniforms", ["OPTRE_UNSC_Army_Uniform_OLI_SlimLeg"]];			//this line determines uniforms for pilot loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
 _pilotLoadoutData set ["Pvests", ["OPTRE_UNSC_M52A_Armor_Pilot_AF"]];			//this line determines vests for pilot loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _pilotLoadoutData set ["Phelmets", [
 "OPTRE_UNSC_CH252_Helmet2_Vacuum_SNO", 

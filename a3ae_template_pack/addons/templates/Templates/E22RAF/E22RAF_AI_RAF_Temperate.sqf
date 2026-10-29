@@ -51,11 +51,10 @@ private _vehiclesPlanesAA = ["E22_O_RAF_Plane_Fighter_02_F"];
 private _vehiclesHelisAttack = ["E22_O_RAF_Heli_Attack_02_dynamicLoadout_F"];
 
 private _vehiclesArtillery = ["E22_O_RAF_MBT_02_arty_F","E22_O_RAF_Truck_02_MRL_F"];
-["magazines", createHashMapFromArray [
-["E22_O_RAF_MBT_02_arty_F", ["32Rnd_155mm_Mo_shells_O"]],
-["E22_O_RAF_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]],
-["min_rf_2b26", ["40Rnd_min_rf_122mm_grad"]]
-]] call _fnc_saveToTemplate; //element format: [Vehicle class, [Magazines]]
+private _magazines = createHashMapFromArray [
+["E22_O_RAF_D_MBT_02_arty_F", ["32Rnd_155mm_Mo_shells_O"]],
+["E22_O_RAF_D_Truck_02_MRL_F", ["12Rnd_230mm_rockets"]]
+];
 
 ["uavsAttack", ["E22_O_RAF_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 private _uavsPortable = ["E22_O_RAF_UAV_01_F"];
@@ -98,6 +97,7 @@ if (isClass (configFile >> "CfgVehicles" >> "min_rf_t_15")) then {
     _vehiclesHelisAttack append ["min_rf_ka_52"];
     _vehiclesArtillery append ["min_rf_2b26", "E22_O_RAF_MBT_02_arty_F"];
     _uavsPortable append ["min_rf_pchela_1t"];
+    _magazines set ["min_rf_2b26", ["40Rnd_min_rf_122mm_grad"]];
 };
 
 
@@ -110,6 +110,7 @@ if (isClass (configFile >> "CfgVehicles" >> "min_rf_t_15")) then {
 ["vehiclesPlanesAA", _vehiclesPlanesAA] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", _vehiclesHelisAttack] call _fnc_saveToTemplate;
 ["vehiclesArtillery", _vehiclesArtillery] call _fnc_saveToTemplate;
+["magazines", _magazines] call _fnc_saveToTemplate; //element format: [Vehicle class, [Magazines]]
 ["uavsPortable", _uavsPortable] call _fnc_saveToTemplate;
 ["vehiclesPolice", _vehiclesPolice] call _fnc_saveToTemplate;
 
