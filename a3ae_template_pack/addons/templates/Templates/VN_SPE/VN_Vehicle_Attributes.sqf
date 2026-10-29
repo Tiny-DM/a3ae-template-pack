@@ -4,6 +4,8 @@
     ["a3a_vn_b_wheeled_m54_mg_02", ["cost", 60], ["threat", 80]],
     ["vn_o_wheeled_btr40_mg_03", ["cost", 60], ["threat", 80]],
     ["vn_o_wheeled_z157_mg_02", ["cost", 60], ["threat", 80]],
+    ["lk_pla_BTR50_SPAAG", ["cost", 60], ["threat", 80]],
+    ["lk_pla_z157_zpu", ["cost", 60], ["threat", 80]],
 
     // Filling out APC arrays but they're just trucks 
     ["vn_o_wheeled_z157_01", ["cost", 20], ["threat", 0]],
@@ -16,6 +18,8 @@
     // These are probably not super effective
     ["vn_o_air_mig19_at", ["cost", 150]],
     ["vn_o_air_mig19_cap", ["cost", 200]],
+    ["lk_pla_mig19_at", ["cost", 150]],
+    ["lk_pla_mig19_cap", ["cost", 200]],
     ["vn_b_air_f100d_at", ["cost", 210]],
     ["vn_b_air_f100d_cap", ["cost", 200]],
     
@@ -33,7 +37,7 @@ if (isClass (configFile >> "CfgPatches" >> "vnx_credits")) then {
         ["vnx_b_air_a4e_ran_cap", ["cost", 200]],
         ["vnx_b_air_a4e_rnzaf_cap", ["cost", 200]],
 
-        // silly COIN plane with MMG main guns, no guided munitions
+        // silly COIN plane with MMG main guns, no guided munitions, unless...
         ["vnx_b_air_ov10a_mr", ["cost", 140]],
         ["vnx_b_air_ov10a_usmc_mr", ["cost", 140]],
         ["vnx_b_air_ov10a_aus_covey", ["cost", 140]]     

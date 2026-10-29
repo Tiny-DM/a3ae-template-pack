@@ -42,9 +42,21 @@ private _vehiclesLightArmed = ["SPE_FR_G503_MB_M1919_PATROL", "SPE_FR_G503_MB_M2
 ["vehiclesLightAPCs", ["SPE_FR_M3_Halftrack"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
-["vehiclesLightTanks", ["SPE_FR_M4A0_75_mid","SPE_FR_M4A3_75","SPE_FR_M4A0_105"]] call _fnc_saveToTemplate;
+private _vehiclesLightTanks = ["SPE_FR_M4A0_75_mid","SPE_FR_M4A3_75","SPE_FR_M4A0_105"];
 ["vehiclesTanks", ["SPE_FR_M4A3_76"]] call _fnc_saveToTemplate;
 private _vehiclesAA = ["a3a_vn_b_wheeled_m54_mg_02", "SPE_FR_M16_Halftrack"];
+
+if (isClass (configFile >> "CfgPatches" >> "MWB_M24Chaffee")) then {
+	private _m24Classname = "MWB_M24Chaffee";
+	if (isClass (configFile >> "CfgVehicles" >> "a3a_MWB_M24Chaffee_French")) then {_m24Classname = "a3a_MWB_M24Chaffee_French"}; //Forward compatibility: Template pack probably updates more than main
+    _vehiclesLightTanks append [_m24Classname, _m24Classname, _m24Classname];
+};
+if (isClass (configFile >> "CfgPatches" >> "MWB_M36Jackson")) then {
+	private _m36Classname = "MWB_M36B2";
+	if (isClass (configFile >> "CfgVehicles" >> "a3a_MWB_M36B2_French")) then {_m36Classname = "a3a_MWB_M36B2_French"};
+    ["vehiclesTanks", ["SPE_FR_M4A3_76", _m36Classname, _m36Classname]] call _fnc_saveToTemplate;
+};
+["vehiclesLightTanks", _vehiclesLightTanks] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["vn_b_boat_09_01"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["vn_b_boat_13_02", "vn_b_boat_06_02", "vn_b_boat_05_02", "vn_b_boat_12_02"]] call _fnc_saveToTemplate;

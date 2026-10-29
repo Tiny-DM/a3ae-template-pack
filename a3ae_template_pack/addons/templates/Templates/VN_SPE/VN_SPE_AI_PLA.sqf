@@ -29,6 +29,7 @@
 //       Vehicles       //
 //////////////////////////
 
+["attributeLowAir", true] call _fnc_saveToTemplate;             // Use fewer air units in general
 
 ["vehiclesBasic", ["vn_o_bicycle_01"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["vn_o_wheeled_btr40_01_nva65"]] call _fnc_saveToTemplate;
@@ -50,9 +51,9 @@
 ["vehiclesGunBoats", ["vn_o_boat_03_01", "vn_o_boat_04_01"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["vn_o_air_mig19_at", "vn_o_air_mig21_cas"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["vn_o_air_mig19_cap", "vn_o_air_mig21_cap", "vn_o_air_mig21_cap"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["vn_o_air_mig19_at"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["vn_o_air_mig19_cap"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["vnx_i_air_ac119_02_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["vn_o_air_mi2_01_03"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["vn_o_air_mi2_01_03"]] call _fnc_saveToTemplate;
@@ -92,6 +93,7 @@
 ["minefieldAT", ["vn_mine_tm57"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["vn_mine_m16", "vn_mine_chicom_no8", "vn_mine_tripwire_m49_04"]] call _fnc_saveToTemplate;
 
+#include "VN_SPE_AI_PLA_AFC.sqf" //Asian Flashpont: China compat
 #include "VN_Vehicle_Attributes.sqf"
 
 /////////////////////
@@ -245,8 +247,8 @@ _militaryLoadoutData set ["engBackpacks", ["vn_o_pack_05"]];
 
 _militaryLoadoutData set ["rifles", [
 ["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
-["vn_type56", "", "", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
-["vn_type56", "", "", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""],
+["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
+["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
 ["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["slRifles", [
@@ -260,6 +262,8 @@ _militaryLoadoutData set ["SMGs", [
 ["vn_pps43", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
+["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m19_wp_mag", "vn_22mm_m60_heat_mag", "vn_22mm_m22_smoke_mag"], ""],
+["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_heat_mag", "vn_22mm_m19_wp_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m22_smoke_mag"], ""],
 ["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m19_wp_mag", "vn_22mm_m60_heat_mag", "vn_22mm_m22_smoke_mag"], ""],
 ["vn_sks_gl", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], ["vn_22mm_m60_heat_mag", "vn_22mm_m19_wp_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m22_smoke_mag"], ""],
 ["vnx_type56_xm148", "", "", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], ["vn_40mm_m381_he_mag", "vn_40mm_m433_hedp_mag", "vn_40mm_m662_flare_r_mag", "vn_40mm_m680_smoke_w_mag", "vn_40mm_m381_he_mag"], ""],
@@ -320,12 +324,12 @@ _militiaLoadoutData set ["helmets", ["vn_o_pl_cap_01_01", "vn_o_pl_cap_02_01"]];
 _militiaLoadoutData set ["rifles", [
 ["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
 ["vn_sks", "", "vn_b_sks", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
-["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""]
+["vn_m9130", "", "vn_b_m38", "", ["vn_m38_mag", "vn_m38_mag", "vn_m38_t_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["slRifles", [
 ["vn_pps52", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""],
 ["vn_sks", "", "", "", ["vn_sks_mag", "vn_sks_mag", "vn_sks_t_mag"], [], ""],
-["vn_type56", "", "vn_b_type56", "", ["vn_type56_mag", "vn_type56_mag", "vn_type56_t_mag"], [], ""]
+["vn_m9130", "", "vn_b_m38", "", ["vn_m38_mag", "vn_m38_mag", "vn_m38_t_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["vn_pps52", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""],
