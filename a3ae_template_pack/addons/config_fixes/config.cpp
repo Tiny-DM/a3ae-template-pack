@@ -8,7 +8,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Data_F_AoW_Loadorder"};
+        requiredAddons[] = {QDOUBLES(PREFIX,core), "A3_Data_F_AoW_Loadorder"};
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";
